@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Capa_Vista_Seguridad
 {
-    public partial class mantenimiento : Form
+    public partial class Examen : Form
     {
-        public mantenimiento(string idUsuario)
+        public Examen(string idUsuario)
         {
             InitializeComponent();
             string[] alias = { "ID", "nombre", "descripción", "estado" };
@@ -23,7 +23,7 @@ namespace Capa_Vista_Seguridad
             navegador1.AsignarTabla("marca");
             //List<string> tablas = new List<string> { "detallefactura", "pagos" };
             //navegador1.AsignarTablas(tablas);
-            navegador1.ObtenerIdAplicacion("88001");
+            navegador1.ObtenerIdAplicacion("87001");
             navegador1.ObtenerIdUsuario(idUsuario);
             navegador1.AsignarAyuda("1");
             navegador1.AsignarNombreForm("Marcas");
