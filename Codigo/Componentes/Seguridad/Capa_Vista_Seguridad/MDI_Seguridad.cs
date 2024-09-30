@@ -445,6 +445,18 @@ namespace Capa_Vista_Seguridad
 
         }
 
+        private void mantenimiento1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Bodega b = new Bodega(idUsuario);
+            b.MdiParent = this;
+            b.Show();
+        }
+
+        private void prototiposToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //------------------------------------------ Fin KATERYN DE LEON y Gabriela Suc ------------------------------------------
 
 
