@@ -13,7 +13,6 @@ namespace Capa_Modelo_Reporteria
         public OdbcConnection conexion()
         {
 
-
             OdbcConnection conexion = new OdbcConnection("Dsn=colchoneria");
             try
             {

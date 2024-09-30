@@ -31,18 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
-    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
-    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
-    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Capa_Vista_Navegador">
+      <HintPath>..\..\Navegador\Capa_Vista_Navegador\bin\Debug\Capa_Vista_Navegador.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -132,29 +128,17 @@
     <Compile Include="frm_usuarios.Designer.cs">
       <DependentUpon>frm_usuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="manenimiento.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>manenimiento.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Mantenimiento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mantenimiento.Designer.cs">
-      <DependentUpon>Mantenimiento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="mantenimientoo.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>mantenimientoo.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="MDI_Seguridad.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MDI_Seguridad.Designer.cs">
       <DependentUpon>MDI_Seguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navegador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Navegador.Designer.cs">
+      <DependentUpon>Navegador.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -214,19 +198,11 @@
     <EmbeddedResource Include="frm_usuarios.resx">
       <DependentUpon>frm_usuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="manenimiento.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>manenimiento.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mantenimiento.resx">
-      <DependentUpon>Mantenimiento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="mantenimientoo.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>mantenimientoo.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="MDI_Seguridad.resx">
       <DependentUpon>MDI_Seguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navegador.resx">
+      <DependentUpon>Navegador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -325,9 +301,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\buscar12.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

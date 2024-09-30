@@ -25,10 +25,6 @@ namespace Capa_Vista_Reporteria
             reporteria_usuario rep = new reporteria_usuario();
             rep.MdiParent = this;
             rep.Show();
-
-
-
-
         }
 
         private void Btn_RepAdmin_Click(object sender, EventArgs e)

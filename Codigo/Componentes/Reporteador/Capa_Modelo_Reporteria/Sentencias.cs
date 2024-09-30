@@ -11,8 +11,6 @@ namespace Capa_Modelo_Reporteria
 {
     public class Sentencias
     {
-
-
         string sTabla_reporteria = "tbl_regreporteria";
         Conexion conexion = new Conexion();
         public OdbcDataAdapter DisplayReportes()// método que obtiene el contenido de la tabla reportes
