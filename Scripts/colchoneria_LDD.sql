@@ -128,6 +128,42 @@ CREATE TABLE `ayuda` (
 
 -- --------------------------------------------------------
 
+--
+-- Estructura de tabla para la tabla `vendedores`
+--
+
+CREATE TABLE vendedores
+(
+	codigo_vendedor VARCHAR(5) PRIMARY KEY,
+    nombre_vendedor VARCHAR(60),
+    direccion_vendedor VARCHAR(60),
+    telefono_vendedor VARCHAR(50),
+    nit_vendedor VARCHAR(20),
+    estatus_vendedor VARCHAR(1)
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
+
+CREATE TABLE lineas
+(
+	codigo_linea VARCHAR(5) PRIMARY KEY,
+    nombre_linea VARCHAR(60),
+    `estado` VARCHAR(1)
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
+--
+-- Estructura de tabla para la tabla `clientes`
+--
+
+CREATE TABLE clientes
+(
+	codigo_cliente VARCHAR(5) PRIMARY KEY,
+    nombre_cliente VARCHAR(60),
+    direccion_cliente VARCHAR(60),
+    nit_cliente VARCHAR(20),
+    telefono_cliente VARCHAR(50),
+    codigo_vendedor VARCHAR(5),
+    estatus_cliente VARCHAR(1),
+    FOREIGN KEY (codigo_vendedor) REFERENCES vendedores(codigo_vendedor)
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
+
 
 --
 -- Estructura de tabla para la tabla `detallefactura`

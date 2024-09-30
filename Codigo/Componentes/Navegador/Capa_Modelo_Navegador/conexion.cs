@@ -15,7 +15,7 @@ namespace Capa_Modelo_Navegador
         public OdbcConnection ProbarConexion()
         {
             // Crear una nueva conexión utilizando la DSN especificada.
-            OdbcConnection conn = new OdbcConnection("dsn=umg_prototipo2k24");
+            OdbcConnection conn = new OdbcConnection("dsn=colchoneria");
             try
             {
                 // Intentar abrir la conexión.

@@ -15,7 +15,7 @@ namespace Mantenimiento1
         public Mantenimiento1(string idUsuario)
         {
             InitializeComponent();
-            string[] alias = { "Codigo", "Nombre", "Dirección", "NIT", "Teléfono", "estado" };
+            string[] alias = { "Codigo", "Nombre", "Dirección", "NIT", "Teléfono", "estatus_cliente" };
             navegador1.AsignarAlias(alias);
             navegador1.AsignarSalida(this);
             navegador1.AsignarColorFondo(Color.CadetBlue);
@@ -24,7 +24,7 @@ namespace Mantenimiento1
             navegador1.AsignarForaneas("vendedores", "Código de vendedor", "codigo_vendedor", "codigo_vendedor");
             navegador1.ObtenerIdAplicacion("1000");
             navegador1.ObtenerIdUsuario(idUsuario);
-            navegador1.AsignarAyuda("3");
+            navegador1.AsignarAyuda("1");
             navegador1.AsignarNombreForm("CLIENTES");
         }
     }
