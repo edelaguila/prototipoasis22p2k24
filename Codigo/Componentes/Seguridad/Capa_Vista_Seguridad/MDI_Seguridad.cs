@@ -445,6 +445,13 @@ namespace Capa_Vista_Seguridad
 
         }
 
+        private void mantenimientoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Mantanimiento parcial2 = new Mantanimiento(idUsuario);
+            parcial2.MdiParent = this;
+            parcial2.Show();
+        }
+
         //------------------------------------------ Fin KATERYN DE LEON y Gabriela Suc ------------------------------------------
 
 
