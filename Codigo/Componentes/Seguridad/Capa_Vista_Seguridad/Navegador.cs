@@ -15,17 +15,18 @@ namespace Capa_Vista_Seguridad
         public Navegador(String idUsuario)
         {
             InitializeComponent();
-            string[] alias = { "Codigo", "Nombre", "Puesto", "Depto", "estado" };
+            string[] alias = { "Codigo", "Nombre", "Apellido", "Teléfono", "DPI", "Direccion", "fechaNacimiento", "estado" , "User" };
             navegador1.AsignarAlias(alias);
             navegador1.AsignarSalida(this);
             navegador1.AsignarColorFondo(Color.CadetBlue);
             navegador1.AsignarColorFuente(Color.Black);
-            navegador1.AsignarTabla("empleados");
+            navegador1.AsignarTabla("tbl_empleados");
             navegador1.ObtenerIdAplicacion("1000");
             navegador1.ObtenerIdUsuario(idUsuario);
             navegador1.AsignarAyuda("1");
-            navegador1.AsignarNombreForm("Mantenimiento examen");
+            navegador1.AsignarNombreForm("Mantenimiento Empleados Examen");
 
         }
     }
 }
+
