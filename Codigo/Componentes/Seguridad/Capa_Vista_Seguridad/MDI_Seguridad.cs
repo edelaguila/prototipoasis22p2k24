@@ -454,9 +454,7 @@ namespace Capa_Vista_Seguridad
 
         private void mantenimiento2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            prueba2 Nav = new prueba2(idUsuario);
-            Nav.MdiParent = this;
-            Nav.Show();
+           
         }
 
         //------------------------------------------ Fin KATERYN DE LEON y Gabriela Suc ------------------------------------------
