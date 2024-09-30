@@ -450,7 +450,6 @@ namespace Capa_Vista_Seguridad
             Navegador Nav = new Navegador(idUsuario);
             Nav.MdiParent = this;
             Nav.Show();
-
         }
 
         //------------------------------------------ Fin KATERYN DE LEON y Gabriela Suc ------------------------------------------

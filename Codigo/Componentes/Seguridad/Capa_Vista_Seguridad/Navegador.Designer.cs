@@ -38,14 +38,14 @@ namespace Capa_Vista_Seguridad
             this.navegador1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.navegador1.Location = new System.Drawing.Point(0, 0);
             this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(839, 557);
+            this.navegador1.Size = new System.Drawing.Size(878, 513);
             this.navegador1.TabIndex = 0;
             // 
             // Navegador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(839, 557);
+            this.ClientSize = new System.Drawing.Size(878, 513);
             this.Controls.Add(this.navegador1);
             this.Name = "Navegador";
             this.Text = "Navegador";
