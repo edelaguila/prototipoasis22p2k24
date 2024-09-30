@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Capa_Vista_Navegador">
+      <HintPath>..\..\..\..\..\..\2doParcialPruebas\asis22k24proy2\Codigo\Componentes\Navegador\Capa_Vista_Navegador\bin\Debug\Capa_Vista_Navegador.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -47,6 +50,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormMantenimiento1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMantenimiento1.Designer.cs">
+      <DependentUpon>FormMantenimiento1.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_aplicaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +158,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormMantenimiento1.resx">
+      <DependentUpon>FormMantenimiento1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_aplicaciones.resx">
       <DependentUpon>frm_aplicaciones.cs</DependentUpon>
     </EmbeddedResource>
