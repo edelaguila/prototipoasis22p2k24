@@ -50,6 +50,7 @@
             this.mantenimiento1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimiento2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.navegadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
@@ -57,7 +58,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_nombreUsuario = new System.Windows.Forms.Label();
             this.lbl_usuario = new System.Windows.Forms.Label();
-            this.navegadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -208,19 +208,20 @@
             this.mantenimiento1ToolStripMenuItem,
             this.mantenimiento2ToolStripMenuItem});
             this.prototiposToolStripMenuItem.Name = "prototiposToolStripMenuItem";
-            this.prototiposToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.prototiposToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.prototiposToolStripMenuItem.Text = "Prototipos";
             // 
             // mantenimiento1ToolStripMenuItem
             // 
             this.mantenimiento1ToolStripMenuItem.Name = "mantenimiento1ToolStripMenuItem";
-            this.mantenimiento1ToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.mantenimiento1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mantenimiento1ToolStripMenuItem.Text = "Mantenimiento_1";
+            this.mantenimiento1ToolStripMenuItem.Click += new System.EventHandler(this.mantenimiento1ToolStripMenuItem_Click);
             // 
             // mantenimiento2ToolStripMenuItem
             // 
             this.mantenimiento2ToolStripMenuItem.Name = "mantenimiento2ToolStripMenuItem";
-            this.mantenimiento2ToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.mantenimiento2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mantenimiento2ToolStripMenuItem.Text = "Mantenimiento_2";
             // 
             // ayudaToolStripMenuItem
@@ -231,12 +232,19 @@
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
             // 
+            // navegadorToolStripMenuItem
+            // 
+            this.navegadorToolStripMenuItem.Name = "navegadorToolStripMenuItem";
+            this.navegadorToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this.navegadorToolStripMenuItem.Text = "Navegador";
+            this.navegadorToolStripMenuItem.Click += new System.EventHandler(this.navegadorToolStripMenuItem_Click);
+            // 
             // statusStrip
             // 
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 993);
+            this.statusStrip.Location = new System.Drawing.Point(0, 727);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Padding = new System.Windows.Forms.Padding(2, 0, 22, 0);
             this.statusStrip.Size = new System.Drawing.Size(1053, 22);
@@ -295,18 +303,11 @@
             this.lbl_usuario.TabIndex = 0;
             this.lbl_usuario.Text = "Usuario:";
             // 
-            // navegadorToolStripMenuItem
-            // 
-            this.navegadorToolStripMenuItem.Name = "navegadorToolStripMenuItem";
-            this.navegadorToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
-            this.navegadorToolStripMenuItem.Text = "Navegador";
-            this.navegadorToolStripMenuItem.Click += new System.EventHandler(this.navegadorToolStripMenuItem_Click);
-            // 
             // MDI_Seguridad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1053, 1015);
+            this.ClientSize = new System.Drawing.Size(1053, 749);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);

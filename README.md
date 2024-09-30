@@ -1,2 +1,2 @@
-# asis22k24proy2
-Repositorio oficial proyecto final curso de analisis de sistemas 2 UMG
+# prototipoasis22p2k24
+Repositorio oficial para la entrega de la pràctica del Segundo Parcial
