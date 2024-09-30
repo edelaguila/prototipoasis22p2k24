@@ -15,16 +15,16 @@ namespace Capa_Vista_Seguridad
         public nav(string idUsuario)
         {
             InitializeComponent();
-            string[] alias = { "Codigo Serv", "Nombre", "Estado" };
+            string[] alias = { "Codigo", "Nombre","Cuenta", "Estadus"};
             navegador1.AsignarAlias(alias);
             navegador1.AsignarSalida(this);
             navegador1.AsignarColorFondo(Color.CadetBlue);
             navegador1.AsignarColorFuente(Color.Black);
-            navegador1.AsignarTabla("tipoServicio");
+            navegador1.AsignarTabla("tipoCama");
             navegador1.ObtenerIdAplicacion("1000");
             navegador1.ObtenerIdUsuario(idUsuario);
             navegador1.AsignarAyuda("1");
-            navegador1.AsignarNombreForm("Tipo Servicio - Exa2");
+            navegador1.AsignarNombreForm("Prueba exa");
         }
 
         private void navegador1_Load(object sender, EventArgs e)
