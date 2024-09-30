@@ -120,6 +120,12 @@
       <DependentUpon>menu_reporteria.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pruebaempleados.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pruebaempleados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="reporteria_usuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="pruebaempleados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>pruebaempleados.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="reporteria_usuario.resx">
       <DependentUpon>reporteria_usuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +182,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ayuda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

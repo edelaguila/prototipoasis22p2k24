@@ -40,7 +40,7 @@ namespace Capa_Vista_Reporteria
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(4);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             this.crystalReportViewer1.Size = new System.Drawing.Size(1051, 529);
             this.crystalReportViewer1.TabIndex = 0;
@@ -49,7 +49,7 @@ namespace Capa_Vista_Reporteria
             // direccion_reporte
             // 
             this.direccion_reporte.Location = new System.Drawing.Point(637, 293);
-            this.direccion_reporte.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.direccion_reporte.Margin = new System.Windows.Forms.Padding(4);
             this.direccion_reporte.Name = "direccion_reporte";
             this.direccion_reporte.Size = new System.Drawing.Size(268, 22);
             this.direccion_reporte.TabIndex = 1;
@@ -62,7 +62,7 @@ namespace Capa_Vista_Reporteria
             this.ClientSize = new System.Drawing.Size(1051, 529);
             this.Controls.Add(this.direccion_reporte);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "visualizar";
             this.Text = "visualizar";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
