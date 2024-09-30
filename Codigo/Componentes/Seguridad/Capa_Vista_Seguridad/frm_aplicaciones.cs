@@ -471,6 +471,21 @@ namespace Capa_Vista_Seguridad
         {
 
         }
+
+        private void Txt_titulo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Gpb_buscar_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Gpb_datos_Enter(object sender, EventArgs e)
+        {
+
+        }
         //************* Fin KATERYN DE LEON y Gabriela Suc ************************
 
 

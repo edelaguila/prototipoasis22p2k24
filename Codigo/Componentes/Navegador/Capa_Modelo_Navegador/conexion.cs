@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 namespace Capa_Modelo_Navegador
 {
     // Clase para gestionar la conexión a la base de datos utilizando ODBC.
-    class conexion
+    public class conexion
     {
         // Método que prueba la conexión a la base de datos utilizando una DSN específica.
         public OdbcConnection ProbarConexion()
         {
             // Crear una nueva conexión utilizando la DSN especificada.
-            OdbcConnection conn = new OdbcConnection("dsn=colchoneria");
+            OdbcConnection conn = new OdbcConnection("dsn=umg_prototipo2k24");
             try
             {
                 // Intentar abrir la conexión.

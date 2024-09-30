@@ -445,6 +445,20 @@ namespace Capa_Vista_Seguridad
 
         }
 
+        private void navegadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            nav n = new nav(idUsuario);
+            n.MdiParent = this;
+            n.Show();
+        }
+
+        private void mantenimiento1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ingredientes ingre = new Ingredientes();
+            ingre.MdiParent = this;
+            ingre.Show();
+        }
+
         //------------------------------------------ Fin KATERYN DE LEON y Gabriela Suc ------------------------------------------
 
 
