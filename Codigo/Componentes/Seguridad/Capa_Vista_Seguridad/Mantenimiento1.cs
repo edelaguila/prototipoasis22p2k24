@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace Capa_Vista_Seguridad
 {
-    public partial class Navegador : Form
+    public partial class Mantenimiento1 : Form
     {
-        public Navegador(string idUsuario)
+        public Mantenimiento1(String idUsario)
         {
             InitializeComponent();
+
 
             string[] alias = { "Codigo", "Nombre", "Puesto", "Depto", "estado" };
             navegador1.AsignarAlias(alias);
@@ -23,13 +24,14 @@ namespace Capa_Vista_Seguridad
             navegador1.AsignarColorFuente(Color.Black);
             navegador1.AsignarTabla("empleados");
             navegador1.ObtenerIdAplicacion("2000");
-            navegador1.ObtenerIdUsuario(idUsuario);
+            navegador1.ObtenerIdUsuario(idUsario);
             navegador1.AsignarAyuda("1");
-            navegador1.AsignarNombreForm("Mantenimiento 1");
-        }
+            navegador1.AsignarNombreForm("Mantenimiento examen");
 
-        private void navegador1_Load(object sender, EventArgs e)
-        {
+
+
+
+
 
         }
     }

@@ -1,7 +1,7 @@
 ﻿
 namespace Capa_Vista_Seguridad
 {
-    partial class Navegador
+    partial class Mantenimiento1
     {
         /// <summary>
         /// Required designer variable.
@@ -39,18 +39,17 @@ namespace Capa_Vista_Seguridad
             this.navegador1.Location = new System.Drawing.Point(0, 0);
             this.navegador1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1507, 1134);
+            this.navegador1.Size = new System.Drawing.Size(1508, 1103);
             this.navegador1.TabIndex = 0;
-            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
-            // Navegador
+            // Mantenimiento1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1507, 1134);
+            this.ClientSize = new System.Drawing.Size(1508, 1103);
             this.Controls.Add(this.navegador1);
-            this.Name = "Navegador";
-            this.Text = "Navegador";
+            this.Name = "Mantenimiento1";
+            this.Text = "Mantenimiento1";
             this.ResumeLayout(false);
 
         }

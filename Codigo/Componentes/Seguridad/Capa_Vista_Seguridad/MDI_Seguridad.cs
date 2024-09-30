@@ -308,6 +308,7 @@ namespace Capa_Vista_Seguridad
         frm_cambioclave mostrarCambioClave = new frm_cambioclave();
 
         public frm_usuarios MostrarUsuarios { get => mostrarUsuarios; set => mostrarUsuarios = value; }
+        public Mantenimiento1 Mantenimiento1 { get; private set; }
 
         private void CambioContraseñaToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -456,8 +457,38 @@ namespace Capa_Vista_Seguridad
 
         }
 
+  
+      
+
+      
+        private void mantenimiento1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+
+      
+            Form frmC = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is Mantenimiento1);
+            if (ventanaMostrarClave == false || frmC == null)
+            {
+                if (frmC == null)
+                {
+                    Mantenimiento1 = new Mantenimiento1 (idUsuario);
+                }
+
+                Mantenimiento1.MdiParent = this;
+                Mantenimiento1.Show();
+                Application.DoEvents();
+                ventanaMostrarClave = true;
+            }
+            else
+            {
+                mostrarCambioClave.WindowState = System.Windows.Forms.FormWindowState.Normal;
+            }
+        }
+
+    }
+
         //------------------------------------------ Fin KATERYN DE LEON y Gabriela Suc ------------------------------------------
 
 
-    }
+    
 }

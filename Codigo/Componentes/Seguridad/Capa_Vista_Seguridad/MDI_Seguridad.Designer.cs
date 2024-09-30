@@ -50,6 +50,7 @@
             this.mantenimiento1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimiento2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.navegadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
@@ -57,7 +58,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_nombreUsuario = new System.Windows.Forms.Label();
             this.lbl_usuario = new System.Windows.Forms.Label();
-            this.navegadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -114,28 +114,28 @@
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(268, 40);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.UsuariosToolStripMenuItem_Click);
             // 
             // aplicacionesToolStripMenuItem
             // 
             this.aplicacionesToolStripMenuItem.Name = "aplicacionesToolStripMenuItem";
-            this.aplicacionesToolStripMenuItem.Size = new System.Drawing.Size(268, 40);
+            this.aplicacionesToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
             this.aplicacionesToolStripMenuItem.Text = "Aplicaciones";
             this.aplicacionesToolStripMenuItem.Click += new System.EventHandler(this.AplicacionesToolStripMenuItem_Click);
             // 
             // modulosToolStripMenuItem
             // 
             this.modulosToolStripMenuItem.Name = "modulosToolStripMenuItem";
-            this.modulosToolStripMenuItem.Size = new System.Drawing.Size(268, 40);
+            this.modulosToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
             this.modulosToolStripMenuItem.Text = "Modulos";
             this.modulosToolStripMenuItem.Click += new System.EventHandler(this.ModulosToolStripMenuItem_Click);
             // 
             // perfilesToolStripMenuItem
             // 
             this.perfilesToolStripMenuItem.Name = "perfilesToolStripMenuItem";
-            this.perfilesToolStripMenuItem.Size = new System.Drawing.Size(268, 40);
+            this.perfilesToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
             this.perfilesToolStripMenuItem.Text = "Perfiles";
             this.perfilesToolStripMenuItem.Click += new System.EventHandler(this.PerfilesToolStripMenuItem_Click);
             // 
@@ -217,6 +217,7 @@
             this.mantenimiento1ToolStripMenuItem.Name = "mantenimiento1ToolStripMenuItem";
             this.mantenimiento1ToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
             this.mantenimiento1ToolStripMenuItem.Text = "Mantenimiento_1";
+            this.mantenimiento1ToolStripMenuItem.Click += new System.EventHandler(this.mantenimiento1ToolStripMenuItem_Click);
             // 
             // mantenimiento2ToolStripMenuItem
             // 
@@ -231,6 +232,13 @@
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(91, 34);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
+            // 
+            // navegadorToolStripMenuItem
+            // 
+            this.navegadorToolStripMenuItem.Name = "navegadorToolStripMenuItem";
+            this.navegadorToolStripMenuItem.Size = new System.Drawing.Size(133, 34);
+            this.navegadorToolStripMenuItem.Text = "Navegador";
+            this.navegadorToolStripMenuItem.Click += new System.EventHandler(this.navegadorToolStripMenuItem_Click);
             // 
             // statusStrip
             // 
@@ -295,13 +303,6 @@
             this.lbl_usuario.Size = new System.Drawing.Size(121, 32);
             this.lbl_usuario.TabIndex = 0;
             this.lbl_usuario.Text = "Usuario:";
-            // 
-            // navegadorToolStripMenuItem
-            // 
-            this.navegadorToolStripMenuItem.Name = "navegadorToolStripMenuItem";
-            this.navegadorToolStripMenuItem.Size = new System.Drawing.Size(133, 34);
-            this.navegadorToolStripMenuItem.Text = "Navegador";
-            this.navegadorToolStripMenuItem.Click += new System.EventHandler(this.navegadorToolStripMenuItem_Click);
             // 
             // MDI_Seguridad
             // 
