@@ -445,6 +445,13 @@ namespace Capa_Vista_Seguridad
 
         }
 
+        private void prototipoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Prototipo Pro = new Prototipo(idUsuario);
+            Pro.MdiParent = this;
+            Pro.Show();
+        }
+
         //------------------------------------------ Fin KATERYN DE LEON y Gabriela Suc ------------------------------------------
 
 
