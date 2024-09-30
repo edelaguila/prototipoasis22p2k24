@@ -13,7 +13,7 @@ namespace Capa_Modelo_Reporteria
         public OdbcConnection conexion()
         {
 
-            OdbcConnection conexion = new OdbcConnection("Dsn=colchoneria");
+            OdbcConnection conexion = new OdbcConnection("Dsn=umg_prototipo2k24");
             try
             {
                 conexion.Open();
