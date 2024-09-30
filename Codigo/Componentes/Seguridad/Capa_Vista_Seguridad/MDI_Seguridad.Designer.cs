@@ -208,19 +208,20 @@
             this.mantenimiento1ToolStripMenuItem,
             this.mantenimiento2ToolStripMenuItem});
             this.prototiposToolStripMenuItem.Name = "prototiposToolStripMenuItem";
-            this.prototiposToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
+            this.prototiposToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.prototiposToolStripMenuItem.Text = "Prototipos";
             // 
             // mantenimiento1ToolStripMenuItem
             // 
             this.mantenimiento1ToolStripMenuItem.Name = "mantenimiento1ToolStripMenuItem";
-            this.mantenimiento1ToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
+            this.mantenimiento1ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.mantenimiento1ToolStripMenuItem.Text = "Mantenimiento_1";
+            this.mantenimiento1ToolStripMenuItem.Click += new System.EventHandler(this.mantenimiento1ToolStripMenuItem_Click);
             // 
             // mantenimiento2ToolStripMenuItem
             // 
             this.mantenimiento2ToolStripMenuItem.Name = "mantenimiento2ToolStripMenuItem";
-            this.mantenimiento2ToolStripMenuItem.Size = new System.Drawing.Size(207, 26);
+            this.mantenimiento2ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.mantenimiento2ToolStripMenuItem.Text = "Mantenimiento_2";
             // 
             // ayudaToolStripMenuItem

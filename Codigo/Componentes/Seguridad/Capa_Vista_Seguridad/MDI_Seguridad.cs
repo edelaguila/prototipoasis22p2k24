@@ -452,6 +452,13 @@ namespace Capa_Vista_Seguridad
             n.Show();
         }
 
+        private void mantenimiento1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ingredientes ingre = new Ingredientes();
+            ingre.MdiParent = this;
+            ingre.Show();
+        }
+
         //------------------------------------------ Fin KATERYN DE LEON y Gabriela Suc ------------------------------------------
 
 
