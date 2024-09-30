@@ -16,12 +16,12 @@ namespace Capa_Vista_Seguridad
         {
             InitializeComponent();
            
-            string[] alias = { "Codigo", "Nombre", "Clasificacion", "Genero", "Idioma", "Precio", "estado" };
+            string[] alias = { "Codigo", "Nombre", "Genero", "Precio", "estado" };
             navegador1.AsignarAlias(alias);
             navegador1.AsignarSalida(this);
             navegador1.AsignarColorFondo(Color.CadetBlue);
             navegador1.AsignarColorFuente(Color.Black);
-            navegador1.AsignarTabla("Peliculas");
+            navegador1.AsignarTabla("peliculas");
             navegador1.ObtenerIdAplicacion("9000");
             navegador1.ObtenerIdUsuario("idUsuario");
             navegador1.AsignarAyuda("1");
