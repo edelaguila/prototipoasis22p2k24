@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO; // Necesario para Directory, File, Path y SearchOption
 using Capa_Controlador_Seguridad;
+using Capa_Vista_Navegador;
 namespace Capa_Vista_Seguridad
 {
     public partial class MDI_Seguridad : Form
@@ -443,6 +444,11 @@ namespace Capa_Vista_Seguridad
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void navegadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
         }
 
         //------------------------------------------ Fin KATERYN DE LEON y Gabriela Suc ------------------------------------------
