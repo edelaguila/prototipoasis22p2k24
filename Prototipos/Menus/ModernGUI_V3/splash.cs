@@ -21,10 +21,10 @@ namespace Interfac_V3
             {
                 timer1.Stop();
                 this.Hide();
-                Capa_Vista_Seguridad.frm_login b = new Capa_Vista_Seguridad.frm_login();
-                b.Show();
-                //FormModulos b = new FormModulos();
+                //Capa_Vista_Seguridad.frm_login b = new Capa_Vista_Seguridad.frm_login();
                 //b.Show();
+                FormModulos b = new FormModulos();
+                b.Show();
                 //b.ShowDialog();
             }
         }
