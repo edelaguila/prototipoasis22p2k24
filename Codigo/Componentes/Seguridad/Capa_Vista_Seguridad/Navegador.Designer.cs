@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.navegador1 = new Capa_Vista_Navegador.Navegador();
+            this.Ayuda = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // navegador1
@@ -41,11 +42,22 @@
             this.navegador1.Size = new System.Drawing.Size(1144, 597);
             this.navegador1.TabIndex = 0;
             // 
+            // Ayuda
+            // 
+            this.Ayuda.Location = new System.Drawing.Point(1015, 180);
+            this.Ayuda.Name = "Ayuda";
+            this.Ayuda.Size = new System.Drawing.Size(75, 23);
+            this.Ayuda.TabIndex = 1;
+            this.Ayuda.Text = "Ayuda";
+            this.Ayuda.UseVisualStyleBackColor = true;
+            this.Ayuda.Click += new System.EventHandler(this.Ayuda_Click);
+            // 
             // Navegador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1144, 597);
+            this.Controls.Add(this.Ayuda);
             this.Controls.Add(this.navegador1);
             this.Name = "Navegador";
             this.Text = "Navegador";
@@ -56,5 +68,6 @@
         #endregion
 
         private Capa_Vista_Navegador.Navegador navegador1;
+        private System.Windows.Forms.Button Ayuda;
     }
 }
