@@ -445,6 +445,13 @@ namespace Capa_Vista_Seguridad
 
         }
 
+        private void mantenimiento1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Mantenimiento_Concepto mantenimiento = new Mantenimiento_Concepto(idUsuario);
+            mantenimiento.MdiParent = this;
+            mantenimiento.Show();
+        }
+
         //------------------------------------------ Fin KATERYN DE LEON y Gabriela Suc ------------------------------------------
 
 
