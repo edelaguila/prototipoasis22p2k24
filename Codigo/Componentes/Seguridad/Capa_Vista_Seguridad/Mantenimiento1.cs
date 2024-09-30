@@ -10,21 +10,21 @@ using System.Windows.Forms;
 
 namespace Capa_Vista_Seguridad
 {
-    public partial class Musica : Form
+    public partial class Mantenimiento1 : Form
     {
-        public Musica(String idUsuario)
+        public Mantenimiento1(String idUsuario)
         {
             InitializeComponent();
-            string[] alias = { "Codigo", "Nombre", "artista", "genero", "estado" };
+            string[] alias = { "Codigo", "Nombre", "estado" };
             navegador1.AsignarAlias(alias);
             navegador1.AsignarSalida(this);
             navegador1.AsignarColorFondo(Color.CadetBlue);
             navegador1.AsignarColorFuente(Color.Black);
-            navegador1.AsignarTabla("Musica");
-            navegador1.ObtenerIdAplicacion("1");
+            navegador1.AsignarTabla("marcas");
+            navegador1.ObtenerIdAplicacion("1000");
             navegador1.ObtenerIdUsuario(idUsuario);
             navegador1.AsignarAyuda("1");
-            navegador1.AsignarNombreForm("Mantenimiento Musica");
+            navegador1.AsignarNombreForm("Mantenimiento de Marca");
         }
     }
 }

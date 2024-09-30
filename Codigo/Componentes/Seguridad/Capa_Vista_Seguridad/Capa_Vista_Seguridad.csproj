@@ -149,11 +149,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Musica.cs">
+    <Compile Include="Mantenimiento1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Musica.Designer.cs">
-      <DependentUpon>Musica.cs</DependentUpon>
+    <Compile Include="Mantenimiento1.Designer.cs">
+      <DependentUpon>Mantenimiento1.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -217,8 +217,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Musica.resx">
-      <DependentUpon>Musica.cs</DependentUpon>
+    <EmbeddedResource Include="Mantenimiento1.resx">
+      <DependentUpon>Mantenimiento1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

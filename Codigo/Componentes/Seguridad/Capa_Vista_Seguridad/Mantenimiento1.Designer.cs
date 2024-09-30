@@ -1,7 +1,7 @@
 ﻿
 namespace Capa_Vista_Seguridad
 {
-    partial class Musica
+    partial class Mantenimiento1
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Capa_Vista_Seguridad
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new Capa_Vista_Navegador.Navegador();
+           this.navegador1 = new Capa_Vista_Navegador.Navegador();
             this.SuspendLayout();
             // 
             // navegador1
@@ -55,6 +55,6 @@ namespace Capa_Vista_Seguridad
 
         #endregion
 
-        private Capa_Vista_Navegador.Navegador navegador1;
+       private Capa_Vista_Navegador.Navegador navegador1;
     }
 }

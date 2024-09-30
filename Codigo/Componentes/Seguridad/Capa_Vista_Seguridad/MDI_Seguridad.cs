@@ -454,9 +454,14 @@ namespace Capa_Vista_Seguridad
 
         private void musicaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Musica Mus = new Musica(idUsuario);
-            Mus.MdiParent = this;
-            Mus.Show();
+            Mantenimiento1 Mac = new Mantenimiento1(idUsuario);
+            Mac.MdiParent = this;
+            Mac.Show();
+        }
+
+        private void musicaliToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

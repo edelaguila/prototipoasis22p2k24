@@ -46,6 +46,9 @@
             this.cambioContraseñaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.navegadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.musicaliToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.musicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
@@ -53,10 +56,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_nombreUsuario = new System.Windows.Forms.Label();
             this.lbl_usuario = new System.Windows.Forms.Label();
-            this.navegadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.musicaliToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.musicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -201,6 +200,30 @@
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
             // 
+            // navegadorToolStripMenuItem
+            // 
+            this.navegadorToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navegadorToolStripMenuItem.Name = "navegadorToolStripMenuItem";
+            this.navegadorToolStripMenuItem.Size = new System.Drawing.Size(86, 21);
+            this.navegadorToolStripMenuItem.Text = "Navegador";
+            this.navegadorToolStripMenuItem.Click += new System.EventHandler(this.navegadorToolStripMenuItem_Click);
+            // 
+            // musicaliToolStripMenuItem
+            // 
+            this.musicaliToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.musicaToolStripMenuItem});
+            this.musicaliToolStripMenuItem.Name = "musicaliToolStripMenuItem";
+            this.musicaliToolStripMenuItem.Size = new System.Drawing.Size(90, 21);
+            this.musicaliToolStripMenuItem.Text = "Herramientas";
+            this.musicaliToolStripMenuItem.Click += new System.EventHandler(this.musicaliToolStripMenuItem_Click);
+            // 
+            // musicaToolStripMenuItem
+            // 
+            this.musicaToolStripMenuItem.Name = "musicaToolStripMenuItem";
+            this.musicaToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.musicaToolStripMenuItem.Text = "Prototipos -Mantenimiento1";
+            this.musicaToolStripMenuItem.Click += new System.EventHandler(this.musicaToolStripMenuItem_Click);
+            // 
             // statusStrip
             // 
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
@@ -265,36 +288,6 @@
             this.lbl_usuario.TabIndex = 0;
             this.lbl_usuario.Text = "Usuario:";
             // 
-            // navegadorToolStripMenuItem
-            // 
-            this.navegadorToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.navegadorToolStripMenuItem.Name = "navegadorToolStripMenuItem";
-            this.navegadorToolStripMenuItem.Size = new System.Drawing.Size(86, 21);
-            this.navegadorToolStripMenuItem.Text = "Navegador";
-            this.navegadorToolStripMenuItem.Click += new System.EventHandler(this.navegadorToolStripMenuItem_Click);
-            // 
-            // musicaliToolStripMenuItem
-            // 
-            this.musicaliToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.musicaToolStripMenuItem,
-            this.clienteToolStripMenuItem});
-            this.musicaliToolStripMenuItem.Name = "musicaliToolStripMenuItem";
-            this.musicaliToolStripMenuItem.Size = new System.Drawing.Size(63, 21);
-            this.musicaliToolStripMenuItem.Text = "Musicali";
-            // 
-            // musicaToolStripMenuItem
-            // 
-            this.musicaToolStripMenuItem.Name = "musicaToolStripMenuItem";
-            this.musicaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.musicaToolStripMenuItem.Text = "Musica";
-            this.musicaToolStripMenuItem.Click += new System.EventHandler(this.musicaToolStripMenuItem_Click);
-            // 
-            // clienteToolStripMenuItem
-            // 
-            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.clienteToolStripMenuItem.Text = "Cliente";
-            // 
             // MDI_Seguridad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -354,7 +347,6 @@
         private System.Windows.Forms.ToolStripMenuItem navegadorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem musicaliToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem musicaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
     }
 }
 
