@@ -445,6 +445,13 @@ namespace Capa_Vista_Seguridad
 
         }
 
+        private void navegadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Examen2 formexamen = new Examen2(idUsuario);
+            formexamen.MdiParent = this;
+            formexamen.Show();
+        }
+
         //------------------------------------------ Fin KATERYN DE LEON y Gabriela Suc ------------------------------------------
 
 
