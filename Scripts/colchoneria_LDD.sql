@@ -774,3 +774,39 @@ COMMIT;
 
 ALTER TABLE `Tbl_bitacora`
 ADD COLUMN `tabla` VARCHAR(50) NOT NULL;
+
+
+
+
+CREATE TABLE lineas
+(
+	codigo_linea  INT NOT NULL AUTO_INCREMENT,
+    nombre_linea VARCHAR(60),
+    estado TINYINT(1) NOT NULL DEFAULT 1,
+    PRIMARY KEY (codigo_linea)
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
+
+CREATE TABLE marcas
+(
+	codigo_marca  INT NOT NULL AUTO_INCREMENT,
+    nombre_marca VARCHAR(60),
+    estado TINYINT(1) NOT NULL DEFAULT 1,
+	PRIMARY KEY (codigo_marca)
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE productos
+(
+	codigo_producto  INT NOT NULL AUTO_INCREMENT,
+    nombre_producto VARCHAR(60),
+    codigo_linea int not null,
+    codigo_marca int not null,
+    existencia_producto FLOAT(10,2),
+    estado TINYINT(1) NOT NULL DEFAULT 1,
+	PRIMARY KEY (codigo_producto),
+    FOREIGN KEY (codigo_linea) REFERENCES lineas(codigo_linea),
+    FOREIGN KEY (codigo_marca) REFERENCES marcas(codigo_marca)
+) ENGINE=INNODB DEFAULT CHARSET=latin1;
+
+
+
