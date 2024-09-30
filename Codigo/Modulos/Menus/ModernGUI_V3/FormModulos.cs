@@ -44,7 +44,7 @@ namespace Interfac_V3
             //string idUsuario= usuario.Txt_usuario.ToString();
 
             MDI_Seguridad formMDI = new MDI_Seguridad(idUsuario);
-            formMDI.Show();
+           formMDI.Show();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
