@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Capa_Vista_Seguridad
 {
-    public partial class Navegador : Form
+    public partial class Mantenimiento_1 : Form
     {
-        public Navegador(String idUsuario)
+        public Mantenimiento_1(String idUsuario)
         {
             InitializeComponent();
             string[] alias = { "Codigo", "Nombre", "Puesto", "Depto", "estado" };

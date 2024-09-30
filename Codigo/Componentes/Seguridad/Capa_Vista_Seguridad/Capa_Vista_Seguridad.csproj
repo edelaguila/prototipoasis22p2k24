@@ -32,10 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Capa_Vista_Navegador">
-      <HintPath>..\..\..\..\..\..\DANIEL\Octavo Semestre\AS II\asis22k24proy2\Codigo\Componentes\Navegador\Capa_Vista_Navegador\bin\Debug\Capa_Vista_Navegador.dll</HintPath>
-    </Reference>
-    <Reference Include="Interfac_V3">
-      <HintPath>..\..\..\Modulos\Menus\ModernGUI_V3\bin\Debug\Interfac_V3.exe</HintPath>
+      <HintPath>..\..\Navegador\Capa_Vista_Navegador\bin\Debug\Capa_Vista_Navegador.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -131,6 +128,12 @@
     <Compile Include="frm_usuarios.Designer.cs">
       <DependentUpon>frm_usuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenimiento_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_1.Designer.cs">
+      <DependentUpon>Mantenimiento_1.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDI_Seguridad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_usuarios.resx">
       <DependentUpon>frm_usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_1.resx">
+      <DependentUpon>Mantenimiento_1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDI_Seguridad.resx">
       <DependentUpon>MDI_Seguridad.cs</DependentUpon>
