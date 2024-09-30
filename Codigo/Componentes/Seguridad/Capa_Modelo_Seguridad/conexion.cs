@@ -8,11 +8,13 @@ using System.Data.Odbc;
 
 namespace Capa_Modelo_Seguridad
 {
+
     public class conexion
     {
+
         public OdbcConnection conectar()
         {
-            OdbcConnection conectar = new OdbcConnection("Dsn=colchoneria");
+            OdbcConnection conectar = new OdbcConnection("Dsn=“umg_prototipo2k24");
 
             try
             {

@@ -833,12 +833,6 @@ namespace Capa_Modelo_Navegador
             }
         
 
-        public OdbcDataAdapter llenarTblAyuda(string tabla)
-        {
-            string sql = "SELECT * FROM " + tabla + " ;";
-            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, cn.ProbarConexion());
-            return dataTable;
-        }
 
         //******************************************** CODIGO HECHO POR VICTOR CASTELLANOS ***************************** 
     }
