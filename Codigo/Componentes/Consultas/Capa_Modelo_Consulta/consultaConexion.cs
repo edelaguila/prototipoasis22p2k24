@@ -15,7 +15,7 @@ namespace Capa_Modelo_Consulta
         {
             //Se requiere colocar el nombre del DSN
             //Escoger un DSN para todos, hablar en clase
-            OdbcConnection conn = new OdbcConnection("Dsn=colchoneria");
+            OdbcConnection conn = new OdbcConnection("Dsn=umg_prototipo2k24");
             try
             {
                 conn.Open();
