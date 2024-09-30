@@ -445,6 +445,13 @@ namespace Capa_Vista_Seguridad
 
         }
 
+        private void parcialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            parcial formparcial = new parcial (idUsuario);
+            formparcial.MdiParent = this;
+            formparcial.Show();
+        }
+
         //------------------------------------------ Fin KATERYN DE LEON y Gabriela Suc ------------------------------------------
 
 
