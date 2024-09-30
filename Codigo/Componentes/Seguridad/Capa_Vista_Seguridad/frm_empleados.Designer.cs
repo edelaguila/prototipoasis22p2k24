@@ -34,25 +34,22 @@ namespace Capa_Vista_Seguridad
             this.Gpb_datospersonalesclave = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.txt_preguntausuario = new System.Windows.Forms.Label();
-            this.Rdb_inhabilitado = new System.Windows.Forms.RadioButton();
-            this.Rdb_habilitado = new System.Windows.Forms.RadioButton();
             this.Txt_respuestausuario = new System.Windows.Forms.Label();
             this.Txt_estado = new System.Windows.Forms.Label();
             this.txt_estadousuario = new System.Windows.Forms.TextBox();
             this.Gpb_datospersonales = new System.Windows.Forms.GroupBox();
-            this.Txt_correo = new System.Windows.Forms.TextBox();
+            this.Txt_direccion = new System.Windows.Forms.TextBox();
             this.Txt_correousuario = new System.Windows.Forms.Label();
-            this.Txt_apellido = new System.Windows.Forms.TextBox();
-            this.Txt_nomb = new System.Windows.Forms.TextBox();
+            this.Txt_dpi = new System.Windows.Forms.TextBox();
+            this.Txt_telefono = new System.Windows.Forms.TextBox();
             this.Txt_nombreusuario = new System.Windows.Forms.Label();
             this.Txt_apellidousuario = new System.Windows.Forms.Label();
             this.Gpb_datosusuario = new System.Windows.Forms.GroupBox();
             this.Txt_id = new System.Windows.Forms.TextBox();
             this.Txt_idusuario = new System.Windows.Forms.Label();
             this.Txt_usernameusuario = new System.Windows.Forms.Label();
-            this.Txt_nombreusername = new System.Windows.Forms.TextBox();
+            this.Txt_nombre = new System.Windows.Forms.TextBox();
             this.Txt_contraseniausuario = new System.Windows.Forms.Label();
-            this.Txt_clave = new System.Windows.Forms.TextBox();
             this.Btn_ayuda = new System.Windows.Forms.Button();
             this.Btn_nuevo = new System.Windows.Forms.Button();
             this.Btn_modificar = new System.Windows.Forms.Button();
@@ -63,6 +60,8 @@ namespace Capa_Vista_Seguridad
             this.Btn_eliminar = new System.Windows.Forms.Button();
             this.Btn_salir = new System.Windows.Forms.Button();
             this.Btn_guardar = new System.Windows.Forms.Button();
+            this.Txt_apellido = new System.Windows.Forms.TextBox();
+            this.Txt_fechanacimiento = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_usuarios)).BeginInit();
             this.Gpb_datospersonalesclave.SuspendLayout();
             this.Gpb_datospersonales.SuspendLayout();
@@ -99,10 +98,9 @@ namespace Capa_Vista_Seguridad
             // Gpb_datospersonalesclave
             // 
             this.Gpb_datospersonalesclave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.Gpb_datospersonalesclave.Controls.Add(this.Txt_fechanacimiento);
             this.Gpb_datospersonalesclave.Controls.Add(this.textBox1);
             this.Gpb_datospersonalesclave.Controls.Add(this.txt_preguntausuario);
-            this.Gpb_datospersonalesclave.Controls.Add(this.Rdb_inhabilitado);
-            this.Gpb_datospersonalesclave.Controls.Add(this.Rdb_habilitado);
             this.Gpb_datospersonalesclave.Controls.Add(this.Txt_respuestausuario);
             this.Gpb_datospersonalesclave.Controls.Add(this.Txt_estado);
             this.Gpb_datospersonalesclave.Controls.Add(this.txt_estadousuario);
@@ -136,30 +134,6 @@ namespace Capa_Vista_Seguridad
             this.txt_preguntausuario.Size = new System.Drawing.Size(0, 25);
             this.txt_preguntausuario.TabIndex = 260;
             // 
-            // Rdb_inhabilitado
-            // 
-            this.Rdb_inhabilitado.AutoSize = true;
-            this.Rdb_inhabilitado.Location = new System.Drawing.Point(231, 63);
-            this.Rdb_inhabilitado.Margin = new System.Windows.Forms.Padding(4);
-            this.Rdb_inhabilitado.Name = "Rdb_inhabilitado";
-            this.Rdb_inhabilitado.Size = new System.Drawing.Size(104, 29);
-            this.Rdb_inhabilitado.TabIndex = 231;
-            this.Rdb_inhabilitado.TabStop = true;
-            this.Rdb_inhabilitado.Text = "Inactivo";
-            this.Rdb_inhabilitado.UseVisualStyleBackColor = true;
-            // 
-            // Rdb_habilitado
-            // 
-            this.Rdb_habilitado.AutoSize = true;
-            this.Rdb_habilitado.Location = new System.Drawing.Point(94, 63);
-            this.Rdb_habilitado.Margin = new System.Windows.Forms.Padding(4);
-            this.Rdb_habilitado.Name = "Rdb_habilitado";
-            this.Rdb_habilitado.Size = new System.Drawing.Size(91, 29);
-            this.Rdb_habilitado.TabIndex = 230;
-            this.Rdb_habilitado.TabStop = true;
-            this.Rdb_habilitado.Text = "Activo";
-            this.Rdb_habilitado.UseVisualStyleBackColor = true;
-            // 
             // Txt_respuestausuario
             // 
             this.Txt_respuestausuario.AutoSize = true;
@@ -174,12 +148,12 @@ namespace Capa_Vista_Seguridad
             // 
             this.Txt_estado.AutoSize = true;
             this.Txt_estado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_estado.Location = new System.Drawing.Point(131, 30);
+            this.Txt_estado.Location = new System.Drawing.Point(10, 39);
             this.Txt_estado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Txt_estado.Name = "Txt_estado";
-            this.Txt_estado.Size = new System.Drawing.Size(145, 25);
+            this.Txt_estado.Size = new System.Drawing.Size(196, 25);
             this.Txt_estado.TabIndex = 205;
-            this.Txt_estado.Text = "Estado Usuario";
+            this.Txt_estado.Text = "Fecha de Nacimiento";
             // 
             // txt_estadousuario
             // 
@@ -194,10 +168,10 @@ namespace Capa_Vista_Seguridad
             // Gpb_datospersonales
             // 
             this.Gpb_datospersonales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.Gpb_datospersonales.Controls.Add(this.Txt_correo);
+            this.Gpb_datospersonales.Controls.Add(this.Txt_direccion);
             this.Gpb_datospersonales.Controls.Add(this.Txt_correousuario);
-            this.Gpb_datospersonales.Controls.Add(this.Txt_apellido);
-            this.Gpb_datospersonales.Controls.Add(this.Txt_nomb);
+            this.Gpb_datospersonales.Controls.Add(this.Txt_dpi);
+            this.Gpb_datospersonales.Controls.Add(this.Txt_telefono);
             this.Gpb_datospersonales.Controls.Add(this.Txt_nombreusuario);
             this.Gpb_datospersonales.Controls.Add(this.Txt_apellidousuario);
             this.Gpb_datospersonales.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -210,15 +184,15 @@ namespace Capa_Vista_Seguridad
             this.Gpb_datospersonales.TabStop = false;
             this.Gpb_datospersonales.Text = "Datos Personales";
             // 
-            // Txt_correo
+            // Txt_direccion
             // 
-            this.Txt_correo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_correo.Location = new System.Drawing.Point(125, 149);
-            this.Txt_correo.Margin = new System.Windows.Forms.Padding(4);
-            this.Txt_correo.Name = "Txt_correo";
-            this.Txt_correo.Size = new System.Drawing.Size(308, 30);
-            this.Txt_correo.TabIndex = 229;
-            this.Txt_correo.Tag = "4";
+            this.Txt_direccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_direccion.Location = new System.Drawing.Point(125, 149);
+            this.Txt_direccion.Margin = new System.Windows.Forms.Padding(4);
+            this.Txt_direccion.Name = "Txt_direccion";
+            this.Txt_direccion.Size = new System.Drawing.Size(308, 30);
+            this.Txt_direccion.TabIndex = 229;
+            this.Txt_direccion.Tag = "4";
             // 
             // Txt_correousuario
             // 
@@ -227,29 +201,29 @@ namespace Capa_Vista_Seguridad
             this.Txt_correousuario.Location = new System.Drawing.Point(8, 149);
             this.Txt_correousuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Txt_correousuario.Name = "Txt_correousuario";
-            this.Txt_correousuario.Size = new System.Drawing.Size(72, 25);
+            this.Txt_correousuario.Size = new System.Drawing.Size(98, 25);
             this.Txt_correousuario.TabIndex = 228;
-            this.Txt_correousuario.Text = "Correo";
+            this.Txt_correousuario.Text = "Dirección ";
             // 
-            // Txt_apellido
+            // Txt_dpi
             // 
-            this.Txt_apellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_apellido.Location = new System.Drawing.Point(125, 94);
-            this.Txt_apellido.Margin = new System.Windows.Forms.Padding(4);
-            this.Txt_apellido.Name = "Txt_apellido";
-            this.Txt_apellido.Size = new System.Drawing.Size(308, 30);
-            this.Txt_apellido.TabIndex = 226;
-            this.Txt_apellido.Tag = "4";
+            this.Txt_dpi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_dpi.Location = new System.Drawing.Point(125, 94);
+            this.Txt_dpi.Margin = new System.Windows.Forms.Padding(4);
+            this.Txt_dpi.Name = "Txt_dpi";
+            this.Txt_dpi.Size = new System.Drawing.Size(308, 30);
+            this.Txt_dpi.TabIndex = 226;
+            this.Txt_dpi.Tag = "4";
             // 
-            // Txt_nomb
+            // Txt_telefono
             // 
-            this.Txt_nomb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_nomb.Location = new System.Drawing.Point(206, 39);
-            this.Txt_nomb.Margin = new System.Windows.Forms.Padding(4);
-            this.Txt_nomb.Name = "Txt_nomb";
-            this.Txt_nomb.Size = new System.Drawing.Size(227, 30);
-            this.Txt_nomb.TabIndex = 226;
-            this.Txt_nomb.Tag = "1";
+            this.Txt_telefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_telefono.Location = new System.Drawing.Point(206, 39);
+            this.Txt_telefono.Margin = new System.Windows.Forms.Padding(4);
+            this.Txt_telefono.Name = "Txt_telefono";
+            this.Txt_telefono.Size = new System.Drawing.Size(227, 30);
+            this.Txt_telefono.TabIndex = 226;
+            this.Txt_telefono.Tag = "1";
             // 
             // Txt_nombreusuario
             // 
@@ -258,9 +232,9 @@ namespace Capa_Vista_Seguridad
             this.Txt_nombreusuario.Location = new System.Drawing.Point(8, 43);
             this.Txt_nombreusuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Txt_nombreusuario.Name = "Txt_nombreusuario";
-            this.Txt_nombreusuario.Size = new System.Drawing.Size(81, 25);
+            this.Txt_nombreusuario.Size = new System.Drawing.Size(89, 25);
             this.Txt_nombreusuario.TabIndex = 205;
-            this.Txt_nombreusuario.Text = "Nombre";
+            this.Txt_nombreusuario.Text = "Teléfono";
             // 
             // Txt_apellidousuario
             // 
@@ -269,19 +243,19 @@ namespace Capa_Vista_Seguridad
             this.Txt_apellidousuario.Location = new System.Drawing.Point(8, 97);
             this.Txt_apellidousuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Txt_apellidousuario.Name = "Txt_apellidousuario";
-            this.Txt_apellidousuario.Size = new System.Drawing.Size(82, 25);
+            this.Txt_apellidousuario.Size = new System.Drawing.Size(41, 25);
             this.Txt_apellidousuario.TabIndex = 193;
-            this.Txt_apellidousuario.Text = "Apellido";
+            this.Txt_apellidousuario.Text = "Dpi";
             // 
             // Gpb_datosusuario
             // 
             this.Gpb_datosusuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.Gpb_datosusuario.Controls.Add(this.Txt_apellido);
             this.Gpb_datosusuario.Controls.Add(this.Txt_id);
             this.Gpb_datosusuario.Controls.Add(this.Txt_idusuario);
             this.Gpb_datosusuario.Controls.Add(this.Txt_usernameusuario);
-            this.Gpb_datosusuario.Controls.Add(this.Txt_nombreusername);
+            this.Gpb_datosusuario.Controls.Add(this.Txt_nombre);
             this.Gpb_datosusuario.Controls.Add(this.Txt_contraseniausuario);
-            this.Gpb_datosusuario.Controls.Add(this.Txt_clave);
             this.Gpb_datosusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Gpb_datosusuario.Location = new System.Drawing.Point(58, 223);
             this.Gpb_datosusuario.Margin = new System.Windows.Forms.Padding(4);
@@ -318,19 +292,19 @@ namespace Capa_Vista_Seguridad
             this.Txt_usernameusuario.Location = new System.Drawing.Point(14, 93);
             this.Txt_usernameusuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Txt_usernameusuario.Name = "Txt_usernameusuario";
-            this.Txt_usernameusuario.Size = new System.Drawing.Size(102, 25);
+            this.Txt_usernameusuario.Size = new System.Drawing.Size(81, 25);
             this.Txt_usernameusuario.TabIndex = 205;
-            this.Txt_usernameusuario.Text = "Username";
+            this.Txt_usernameusuario.Text = "Nombre";
             // 
-            // Txt_nombreusername
+            // Txt_nombre
             // 
-            this.Txt_nombreusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_nombreusername.Location = new System.Drawing.Point(146, 93);
-            this.Txt_nombreusername.Margin = new System.Windows.Forms.Padding(4);
-            this.Txt_nombreusername.Name = "Txt_nombreusername";
-            this.Txt_nombreusername.Size = new System.Drawing.Size(283, 30);
-            this.Txt_nombreusername.TabIndex = 227;
-            this.Txt_nombreusername.Tag = "3";
+            this.Txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_nombre.Location = new System.Drawing.Point(146, 93);
+            this.Txt_nombre.Margin = new System.Windows.Forms.Padding(4);
+            this.Txt_nombre.Name = "Txt_nombre";
+            this.Txt_nombre.Size = new System.Drawing.Size(283, 30);
+            this.Txt_nombre.TabIndex = 227;
+            this.Txt_nombre.Tag = "3";
             // 
             // Txt_contraseniausuario
             // 
@@ -339,20 +313,9 @@ namespace Capa_Vista_Seguridad
             this.Txt_contraseniausuario.Location = new System.Drawing.Point(8, 141);
             this.Txt_contraseniausuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Txt_contraseniausuario.Name = "Txt_contraseniausuario";
-            this.Txt_contraseniausuario.Size = new System.Drawing.Size(119, 25);
+            this.Txt_contraseniausuario.Size = new System.Drawing.Size(82, 25);
             this.Txt_contraseniausuario.TabIndex = 193;
-            this.Txt_contraseniausuario.Text = " Contraseña";
-            // 
-            // Txt_clave
-            // 
-            this.Txt_clave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_clave.Location = new System.Drawing.Point(146, 141);
-            this.Txt_clave.Margin = new System.Windows.Forms.Padding(4);
-            this.Txt_clave.Name = "Txt_clave";
-            this.Txt_clave.PasswordChar = '*';
-            this.Txt_clave.Size = new System.Drawing.Size(283, 30);
-            this.Txt_clave.TabIndex = 227;
-            this.Txt_clave.Tag = "2";
+            this.Txt_contraseniausuario.Text = "Apellido";
             // 
             // Btn_ayuda
             // 
@@ -482,6 +445,26 @@ namespace Capa_Vista_Seguridad
             this.Btn_guardar.Tag = "5";
             this.Btn_guardar.UseVisualStyleBackColor = false;
             // 
+            // Txt_apellido
+            // 
+            this.Txt_apellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_apellido.Location = new System.Drawing.Point(146, 146);
+            this.Txt_apellido.Margin = new System.Windows.Forms.Padding(4);
+            this.Txt_apellido.Name = "Txt_apellido";
+            this.Txt_apellido.Size = new System.Drawing.Size(283, 30);
+            this.Txt_apellido.TabIndex = 230;
+            this.Txt_apellido.Tag = "4";
+            // 
+            // Txt_fechanacimiento
+            // 
+            this.Txt_fechanacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_fechanacimiento.Location = new System.Drawing.Point(15, 68);
+            this.Txt_fechanacimiento.Margin = new System.Windows.Forms.Padding(4);
+            this.Txt_fechanacimiento.Name = "Txt_fechanacimiento";
+            this.Txt_fechanacimiento.Size = new System.Drawing.Size(227, 30);
+            this.Txt_fechanacimiento.TabIndex = 230;
+            this.Txt_fechanacimiento.Tag = "1";
+            // 
             // frm_empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -523,25 +506,22 @@ namespace Capa_Vista_Seguridad
         private System.Windows.Forms.GroupBox Gpb_datospersonalesclave;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label txt_preguntausuario;
-        private System.Windows.Forms.RadioButton Rdb_inhabilitado;
-        private System.Windows.Forms.RadioButton Rdb_habilitado;
         private System.Windows.Forms.Label Txt_respuestausuario;
         private System.Windows.Forms.Label Txt_estado;
         private System.Windows.Forms.TextBox txt_estadousuario;
         private System.Windows.Forms.GroupBox Gpb_datospersonales;
-        private System.Windows.Forms.TextBox Txt_correo;
+        private System.Windows.Forms.TextBox Txt_direccion;
         private System.Windows.Forms.Label Txt_correousuario;
-        private System.Windows.Forms.TextBox Txt_apellido;
-        private System.Windows.Forms.TextBox Txt_nomb;
+        private System.Windows.Forms.TextBox Txt_dpi;
+        private System.Windows.Forms.TextBox Txt_telefono;
         private System.Windows.Forms.Label Txt_nombreusuario;
         private System.Windows.Forms.Label Txt_apellidousuario;
         private System.Windows.Forms.GroupBox Gpb_datosusuario;
         private System.Windows.Forms.TextBox Txt_id;
         private System.Windows.Forms.Label Txt_idusuario;
         private System.Windows.Forms.Label Txt_usernameusuario;
-        private System.Windows.Forms.TextBox Txt_nombreusername;
+        private System.Windows.Forms.TextBox Txt_nombre;
         private System.Windows.Forms.Label Txt_contraseniausuario;
-        private System.Windows.Forms.TextBox Txt_clave;
         private System.Windows.Forms.Button Btn_ayuda;
         private System.Windows.Forms.Button Btn_nuevo;
         private System.Windows.Forms.Button Btn_modificar;
@@ -552,5 +532,7 @@ namespace Capa_Vista_Seguridad
         private System.Windows.Forms.Button Btn_eliminar;
         private System.Windows.Forms.Button Btn_salir;
         private System.Windows.Forms.Button Btn_guardar;
+        private System.Windows.Forms.TextBox Txt_apellido;
+        private System.Windows.Forms.TextBox Txt_fechanacimiento;
     }
 }
