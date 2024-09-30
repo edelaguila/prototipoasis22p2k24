@@ -323,32 +323,38 @@ namespace Capa_Modelo_Seguridad
             return dataaplicaciones;
         }
         /***********************************************************************/
-        public void proinsertaraplicacion(string scodigo, string snombre, string sdescripcion, string sestado)
+        public void proinsertaraplicacion(string scodigo, string snombre, string sapellido, string sTelefono, string sDpi, string sdireccion, string sFechanac)
         {
             try
             {
                 // Crear la conexión y el comando
                 using (OdbcConnection connection = cn.conectar())
                 {
-                    string query = "INSERT INTO tbl_aplicaciones (" +
-                                   "Pk_id_aplicacion, " +
-                                   "nombre_aplicacion, " +
-                                   "descripcion_aplicacion, " +
-                                   "estado_aplicacion) " +
-                                   "VALUES (?, ?, ?, ?)";
+                    string query = "INSERT INTO tbl_empleados (" +
+                                   "pk_idEmpleado, " +
+                                   "Nombre, " +
+                                   "Apellido, " +
+                                   "Telefono, " +
+                                   "DPI," +
+                                   "Direccion," +
+                                   "FechaNacimiento) " +
+                                   "VALUES (?, ?, ?, ?, ?, ?, ?)";
 
                     using (OdbcCommand cmd = new OdbcCommand(query, connection))
                     {
                         // Agregar los parámetros al comando
-                        cmd.Parameters.AddWithValue("@Pk_id_modulo", scodigo);
+                        cmd.Parameters.AddWithValue("@pk_idEmpleado", scodigo);
                         cmd.Parameters.AddWithValue("@nombre_modulo", snombre);
-                        cmd.Parameters.AddWithValue("@descripcion_modulo", sdescripcion);
-                        cmd.Parameters.AddWithValue("@estado_modulo", sestado);
+                        cmd.Parameters.AddWithValue("@Apellido", sapellido);
+                        cmd.Parameters.AddWithValue("@Telefono", sTelefono);
+                        cmd.Parameters.AddWithValue("@DPI", sDpi);
+                        cmd.Parameters.AddWithValue("@Direccion", sdireccion);
+                        cmd.Parameters.AddWithValue("@FechaNacimiento", sFechanac);
 
                         // Ejecutar el comando
                         cmd.ExecuteNonQuery();
 
-                        funInsertarBitacora(idUsuario, "Inserto un nuevo modulo: " + scodigo + " - " + snombre, "tbl_aplicaciones", "1000");
+                        funInsertarBitacora(idUsuario, "Inserto un nuevo modulo: " + scodigo + " - " + snombre, "tbl_empleados", "1000");
                     }
                 }
             }

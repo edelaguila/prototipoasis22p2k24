@@ -229,12 +229,12 @@ namespace Capa_Controlador_Seguridad
         }
 
 
-        public bool funinsertaraplicaciones(string scodigo, string snombre, string sdescripcion, string sestado)
+        public bool funinsertaraplicaciones(string scodigo, string snombre, string sapellido, string sTelefono, string sDpi, string sdireccion, string sFechanac, string v)
         {
             try
             {
 
-                sn.proinsertaraplicacion(scodigo, snombre, sdescripcion, sestado);
+                sn.proinsertaraplicacion(scodigo, snombre, sapellido, sTelefono, sDpi, sdireccion, sFechanac);
                 return true;
             }
             catch (Exception ex)

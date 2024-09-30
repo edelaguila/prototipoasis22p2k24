@@ -28,9 +28,13 @@ namespace Capa_Vista_Seguridad
             Btn_modificar.Enabled = false;
             Btn_eliminar.Enabled = false;
             logic = new logica(idUsuario);
-            Txt_idaplicacion.Enabled = false;
-            Txt_nombre.Enabled = false;
-            Txt_descripcion.Enabled = false;
+            Txt_idaplicacion.Enabled = true;
+            Txt_nombre.Enabled = true;
+            Txt_descripcion.Enabled = true;
+            Txt_telefono.Enabled = true;
+            Txt_DPI.Enabled = true;
+            Txt_direccion.Enabled = true;
+            Txt_fechanac.Enabled = true;
             Gpb_estado.Enabled = false;
             Rdb_habilitado.Checked = false;
             Rdb_inhabilitado.Checked = false;
@@ -67,6 +71,7 @@ namespace Capa_Vista_Seguridad
             Txt_nombre.Text = "";
             Txt_descripcion.Text = "";
             Txt_buscar.Text = "";
+
             Rdb_habilitado.Checked = false;
             Rdb_inhabilitado.Checked = false;
             Txt_idaplicacion.Focus();
@@ -192,6 +197,10 @@ namespace Capa_Vista_Seguridad
             Txt_idaplicacion.Enabled = true;
             Txt_nombre.Enabled = true;
             Txt_descripcion.Enabled = true;
+            Txt_telefono.Enabled = true;
+            Txt_DPI.Enabled = true;
+            Txt_direccion.Enabled = true;
+            Txt_fechanac.Enabled = true;
             Btn_nuevo.Enabled = false;
             Btn_actualizar.Enabled = false;
             Gpb_buscar.Enabled = false;
@@ -231,6 +240,10 @@ namespace Capa_Vista_Seguridad
         {
             Txt_nombre.Enabled = false;
             Txt_descripcion.Enabled = false;
+            Txt_telefono.Enabled = false;
+            Txt_DPI.Enabled = false;
+            Txt_direccion.Enabled = false;
+            Txt_fechanac.Enabled = false;
 
             if (Txt_nombre.Text == "")
             {
@@ -265,7 +278,7 @@ namespace Capa_Vista_Seguridad
                     estado = "1";
                 }
 
-                logic.funinsertaraplicaciones(Txt_idaplicacion.Text.ToString(), Txt_nombre.Text.ToString(), Txt_descripcion.Text.ToString(), estado.ToString());
+                logic.funinsertaraplicaciones(Txt_idaplicacion.Text.ToString(), Txt_nombre.Text.ToString(), Txt_descripcion.Text.ToString(), estado.ToString(), Txt_telefono.ToString(), Txt_DPI.ToString(), Txt_direccion.ToString(), Txt_fechanac.ToString());
                 MessageBox.Show("Modulo Ingresado Correctamente");
                 prolimpiar();
                 Gpb_buscar.Enabled = true;
