@@ -34,6 +34,7 @@
             this.Txt_buscar_id = new System.Windows.Forms.Label();
             this.Btn_bsucar = new System.Windows.Forms.Button();
             this.Gpb_datos = new System.Windows.Forms.GroupBox();
+            this.Dgv_aplicaciones = new System.Windows.Forms.DataGridView();
             this.Gpb_estado = new System.Windows.Forms.GroupBox();
             this.Rdb_inhabilitado = new System.Windows.Forms.RadioButton();
             this.Rdb_habilitado = new System.Windows.Forms.RadioButton();
@@ -53,11 +54,18 @@
             this.Btn_ingresar = new System.Windows.Forms.Button();
             this.Btn_ayuda = new System.Windows.Forms.Button();
             this.Btn_salir = new System.Windows.Forms.Button();
-            this.Dgv_aplicaciones = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Txt_telefono = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Txt_DPI = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Txt_direccion = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Txt_fechanac = new System.Windows.Forms.TextBox();
             this.Gpb_buscar.SuspendLayout();
             this.Gpb_datos.SuspendLayout();
-            this.Gpb_estado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_aplicaciones)).BeginInit();
+            this.Gpb_estado.SuspendLayout();
             this.SuspendLayout();
             // 
             // Gpb_buscar
@@ -120,6 +128,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Gpb_datos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.Gpb_datos.Controls.Add(this.label5);
+            this.Gpb_datos.Controls.Add(this.Txt_fechanac);
+            this.Gpb_datos.Controls.Add(this.label4);
+            this.Gpb_datos.Controls.Add(this.Txt_direccion);
+            this.Gpb_datos.Controls.Add(this.label2);
+            this.Gpb_datos.Controls.Add(this.Txt_DPI);
+            this.Gpb_datos.Controls.Add(this.label1);
+            this.Gpb_datos.Controls.Add(this.Txt_telefono);
             this.Gpb_datos.Controls.Add(this.Dgv_aplicaciones);
             this.Gpb_datos.Controls.Add(this.Gpb_estado);
             this.Gpb_datos.Controls.Add(this.label3);
@@ -139,6 +155,20 @@
             this.Gpb_datos.TabStop = false;
             this.Gpb_datos.Text = "Datos Aplicacion";
             // 
+            // Dgv_aplicaciones
+            // 
+            this.Dgv_aplicaciones.AllowUserToAddRows = false;
+            this.Dgv_aplicaciones.AllowUserToDeleteRows = false;
+            this.Dgv_aplicaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Dgv_aplicaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_aplicaciones.Location = new System.Drawing.Point(7, 370);
+            this.Dgv_aplicaciones.Name = "Dgv_aplicaciones";
+            this.Dgv_aplicaciones.ReadOnly = true;
+            this.Dgv_aplicaciones.RowHeadersWidth = 72;
+            this.Dgv_aplicaciones.RowTemplate.Height = 31;
+            this.Dgv_aplicaciones.Size = new System.Drawing.Size(769, 127);
+            this.Dgv_aplicaciones.TabIndex = 259;
+            // 
             // Gpb_estado
             // 
             this.Gpb_estado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -147,11 +177,11 @@
             this.Gpb_estado.Controls.Add(this.Rdb_inhabilitado);
             this.Gpb_estado.Controls.Add(this.Rdb_habilitado);
             this.Gpb_estado.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Gpb_estado.Location = new System.Drawing.Point(8, 158);
+            this.Gpb_estado.Location = new System.Drawing.Point(8, 326);
             this.Gpb_estado.Margin = new System.Windows.Forms.Padding(4);
             this.Gpb_estado.Name = "Gpb_estado";
             this.Gpb_estado.Padding = new System.Windows.Forms.Padding(4);
-            this.Gpb_estado.Size = new System.Drawing.Size(769, 27);
+            this.Gpb_estado.Size = new System.Drawing.Size(769, 37);
             this.Gpb_estado.TabIndex = 230;
             this.Gpb_estado.TabStop = false;
             this.Gpb_estado.Text = "Estado";
@@ -161,7 +191,7 @@
             this.Rdb_inhabilitado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Rdb_inhabilitado.AutoSize = true;
-            this.Rdb_inhabilitado.Location = new System.Drawing.Point(381, 0);
+            this.Rdb_inhabilitado.Location = new System.Drawing.Point(381, 2);
             this.Rdb_inhabilitado.Margin = new System.Windows.Forms.Padding(4);
             this.Rdb_inhabilitado.Name = "Rdb_inhabilitado";
             this.Rdb_inhabilitado.Size = new System.Drawing.Size(131, 25);
@@ -212,9 +242,9 @@
             this.Txt_descripcionA.Location = new System.Drawing.Point(25, 114);
             this.Txt_descripcionA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Txt_descripcionA.Name = "Txt_descripcionA";
-            this.Txt_descripcionA.Size = new System.Drawing.Size(107, 22);
+            this.Txt_descripcionA.Size = new System.Drawing.Size(81, 22);
             this.Txt_descripcionA.TabIndex = 193;
-            this.Txt_descripcionA.Text = "Descripcion";
+            this.Txt_descripcionA.Text = "Apellido";
             // 
             // Txt_nombreA
             // 
@@ -223,9 +253,9 @@
             this.Txt_nombreA.Location = new System.Drawing.Point(21, 76);
             this.Txt_nombreA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Txt_nombreA.Name = "Txt_nombreA";
-            this.Txt_nombreA.Size = new System.Drawing.Size(171, 22);
+            this.Txt_nombreA.Size = new System.Drawing.Size(79, 22);
             this.Txt_nombreA.TabIndex = 205;
-            this.Txt_nombreA.Text = " Nombre Aplicacion";
+            this.Txt_nombreA.Text = " Nombre";
             // 
             // Txt_descripcion
             // 
@@ -246,9 +276,9 @@
             this.Txt_id.Location = new System.Drawing.Point(25, 40);
             this.Txt_id.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Txt_id.Name = "Txt_id";
-            this.Txt_id.Size = new System.Drawing.Size(122, 22);
+            this.Txt_id.Size = new System.Drawing.Size(120, 22);
             this.Txt_id.TabIndex = 205;
-            this.Txt_id.Text = "ID Aplicacion";
+            this.Txt_id.Text = "ID empleados";
             // 
             // Txt_idaplicacion
             // 
@@ -268,11 +298,11 @@
             this.Txt_titulo.AutoSize = true;
             this.Txt_titulo.Font = new System.Drawing.Font("Haettenschweiler", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_titulo.ForeColor = System.Drawing.Color.Transparent;
-            this.Txt_titulo.Location = new System.Drawing.Point(157, 9);
+            this.Txt_titulo.Location = new System.Drawing.Point(341, 9);
             this.Txt_titulo.Name = "Txt_titulo";
-            this.Txt_titulo.Size = new System.Drawing.Size(634, 45);
+            this.Txt_titulo.Size = new System.Drawing.Size(334, 45);
             this.Txt_titulo.TabIndex = 260;
-            this.Txt_titulo.Text = "M a n t e n i m i e n to  d e  A p l i c a c i o n e s";
+            this.Txt_titulo.Text = "M a n t e n i m i e n to  1";
             // 
             // Btn_cancelar
             // 
@@ -398,25 +428,103 @@
             this.Btn_salir.UseVisualStyleBackColor = false;
             this.Btn_salir.Click += new System.EventHandler(this.Btn_salir_Click);
             // 
-            // Dgv_aplicaciones
+            // label1
             // 
-            this.Dgv_aplicaciones.AllowUserToAddRows = false;
-            this.Dgv_aplicaciones.AllowUserToDeleteRows = false;
-            this.Dgv_aplicaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.Dgv_aplicaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_aplicaciones.Location = new System.Drawing.Point(9, 196);
-            this.Dgv_aplicaciones.Name = "Dgv_aplicaciones";
-            this.Dgv_aplicaciones.ReadOnly = true;
-            this.Dgv_aplicaciones.RowHeadersWidth = 72;
-            this.Dgv_aplicaciones.RowTemplate.Height = 31;
-            this.Dgv_aplicaciones.Size = new System.Drawing.Size(769, 255);
-            this.Dgv_aplicaciones.TabIndex = 259;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(25, 153);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 22);
+            this.label1.TabIndex = 260;
+            this.label1.Text = "Telefono";
+            // 
+            // Txt_telefono
+            // 
+            this.Txt_telefono.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Txt_telefono.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_telefono.Location = new System.Drawing.Point(249, 150);
+            this.Txt_telefono.Margin = new System.Windows.Forms.Padding(4);
+            this.Txt_telefono.Name = "Txt_telefono";
+            this.Txt_telefono.Size = new System.Drawing.Size(285, 30);
+            this.Txt_telefono.TabIndex = 261;
+            this.Txt_telefono.Tag = "2";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(25, 199);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 22);
+            this.label2.TabIndex = 300;
+            this.label2.Text = "Dpi";
+            // 
+            // Txt_DPI
+            // 
+            this.Txt_DPI.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Txt_DPI.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_DPI.Location = new System.Drawing.Point(249, 196);
+            this.Txt_DPI.Margin = new System.Windows.Forms.Padding(4);
+            this.Txt_DPI.Name = "Txt_DPI";
+            this.Txt_DPI.Size = new System.Drawing.Size(285, 30);
+            this.Txt_DPI.TabIndex = 301;
+            this.Txt_DPI.Tag = "2";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(22, 242);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 22);
+            this.label4.TabIndex = 302;
+            this.label4.Text = "Direccion";
+            // 
+            // Txt_direccion
+            // 
+            this.Txt_direccion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Txt_direccion.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_direccion.Location = new System.Drawing.Point(249, 239);
+            this.Txt_direccion.Margin = new System.Windows.Forms.Padding(4);
+            this.Txt_direccion.Name = "Txt_direccion";
+            this.Txt_direccion.Size = new System.Drawing.Size(285, 30);
+            this.Txt_direccion.TabIndex = 303;
+            this.Txt_direccion.Tag = "2";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(25, 288);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(177, 22);
+            this.label5.TabIndex = 304;
+            this.label5.Text = "Fecha de Nacimiento";
+            // 
+            // Txt_fechanac
+            // 
+            this.Txt_fechanac.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Txt_fechanac.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_fechanac.Location = new System.Drawing.Point(249, 285);
+            this.Txt_fechanac.Margin = new System.Windows.Forms.Padding(4);
+            this.Txt_fechanac.Name = "Txt_fechanac";
+            this.Txt_fechanac.Size = new System.Drawing.Size(285, 30);
+            this.Txt_fechanac.TabIndex = 305;
+            this.Txt_fechanac.Tag = "2";
             // 
             // frm_aplicaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(133)))), ((int)(((byte)(226)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(870, 723);
             this.Controls.Add(this.Btn_cancelar);
             this.Controls.Add(this.Btn_eliminar);
@@ -440,9 +548,9 @@
             this.Gpb_buscar.PerformLayout();
             this.Gpb_datos.ResumeLayout(false);
             this.Gpb_datos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_aplicaciones)).EndInit();
             this.Gpb_estado.ResumeLayout(false);
             this.Gpb_estado.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_aplicaciones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -474,5 +582,13 @@
         private System.Windows.Forms.RadioButton Rdb_inhabilitado;
         private System.Windows.Forms.RadioButton Rdb_habilitado;
         private System.Windows.Forms.DataGridView Dgv_aplicaciones;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox Txt_fechanac;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox Txt_direccion;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox Txt_DPI;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox Txt_telefono;
     }
 }
