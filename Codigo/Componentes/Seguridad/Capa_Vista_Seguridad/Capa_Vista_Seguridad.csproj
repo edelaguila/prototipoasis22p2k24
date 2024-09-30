@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mantenimiento1">
+      <HintPath>..\..\..\..\Prototipos\Mantenimientos\Mantenimiento1\Mantenimiento1\bin\Debug\Mantenimiento1.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
