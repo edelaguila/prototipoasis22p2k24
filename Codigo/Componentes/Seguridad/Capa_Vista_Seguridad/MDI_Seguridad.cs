@@ -445,6 +445,13 @@ namespace Capa_Vista_Seguridad
 
         }
 
+        private void mantenimientoExamenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MantenimientoExamen frmexamen = new MantenimientoExamen(idUsuario);
+            frmexamen.MdiParent = this;
+            frmexamen.Show();
+        }
+
         //------------------------------------------ Fin KATERYN DE LEON y Gabriela Suc ------------------------------------------
 
 
